@@ -1,0 +1,25 @@
+
+imagePullSecrets:
+- name: ${nvcr_secret}
+
+model:
+  ngcAPISecret: ${ngcapi_secret}
+
+image:
+  repository: ${nim_image_repository}
+  tag: ${nim_image_tag}
+
+resources:
+  requests:
+    nvidia.com/gpu: 1
+  limits:
+    nvidia.com/gpu: 1
+
+startupProbe:
+  failureThreshold: 960
+  periodSeconds: 30
+
+persistence:
+  enabled: true
+  storageClass: oci-bv
+  size: 600Gi
