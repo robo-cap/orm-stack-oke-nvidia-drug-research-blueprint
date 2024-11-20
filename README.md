@@ -227,7 +227,7 @@ ssh_public_key           = "<ssh_public_key>"
 simple_np_flex_shape   = { "instanceShape" = "VM.Standard.E4.Flex", "ocpus" = 2, "memory" = 12 }
 
 ## NodePool with GPU shape is created by default with size 0
-gpu_np_size  = 1
+gpu_np_size  = 3
 gpu_np_shape = "VM.GPU.A10.1"
 
 ## OKE Deployment values

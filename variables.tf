@@ -435,7 +435,7 @@ variable "vcn_name" {
 ### OKE Module - Worker NodePool Variables
 variable "gpu_np_size" {
   type        = number
-  default     = 0
+  default     = 3
   description = "The size of the nodepool with GPU shapes."
 }
 
@@ -447,7 +447,7 @@ variable "gpu_np_boot_volume_size" {
 
 variable "gpu_np_shape" {
   type        = string
-  default     = "VM.GPU.A10.2"
+  default     = "VM.GPU.A10.1"
   description = "The compute shape to use for the GPUs nodepool."
 }
 
