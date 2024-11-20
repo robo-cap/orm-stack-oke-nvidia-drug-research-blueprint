@@ -207,6 +207,8 @@ In case of manual deployment, assign this multiline string to the `diffdock_user
 - Configure the variables
 - Apply
 
+[![Deploy to OCI](https://docs.oracle.com/en-us/iaas/Content/Resources/Images/deploy-to-oracle-cloud.svg)](https://cloud.oracle.com/resourcemanager/stacks/create?zipUrl=https://github.com/robo-cap/orm-stack-oke-nvidia-drug-research-blueprint/archive/refs/tags/v1.0.zip)
+
 2. Local deployment
 
 - Create a file called `terraform.auto.tfvars` with the required values.
